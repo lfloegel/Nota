@@ -1,0 +1,18 @@
+body {
+	background-color: #f1f1f1;
+	padding: 20px;
+	font-family: "Poppins";
+}
+
+#intro {
+	font-family: "Playfair Display";
+	font-size: 8vw;
+	margin-bottom: 50px;
+}
+
+.navbar-brand {
+	font-size: 50px;
+	font-family: Playfair Display;
+	margin-top: -40px;
+	color: black;
+}

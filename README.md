@@ -1,2 +1,2 @@
 # Nota
-Web application where students can share, upload, and rate lecture notes. Intended for students who miss lectures or are unable to take notes. 
+Created for our CS185 Final Project. Nota is a network for students to update and share notes from lectures and collaborate with other students to maximize learning.

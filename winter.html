@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/sidenav.css">
+		<link rel="stylesheet" href="css/courseStyle.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Muli|Playfair+Display|Poppins|Raleway&display=swap" rel="stylesheet">
+
+		<title>Nota</title>
+	</head>
+	<body>
+
+		<nav id="mySidenav" class="nav sidenav">
+			<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+			<a id="home" class="nav-link" href="index.html">Home</a>
+			<a class="nav-link active" href="selection.html">Browse Notes</a>
+			<a class="nav-link" href="upload.html">Upload</a>
+			<a class="nav-link" href="about.html">About</a>
+			<a id="login-status" class="nav-link" href="login(typeII).html">Log In</a>
+		</nav>
+
+		<a class="navbar-brand">nota</a>
+
+		<img id="menu" onclick="openNav()" src="images/menu.png">
+
+		<div id="main">
+			<h2 id="title"> <center> Winter Quarter </center> </h2>
+
+			<!--search bars-->
+			<div class="container">
+				<div class="form-row">
+					<form style="margin-top:5vh;">
+						<div class="row">
+							<div class="col">
+								<div class="col-md-4 mb-3">
+									<div class="input-group" style="width:50vh;">
+										<input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Enter course name">
+										<div class="input-group-append">
+											<button class="btn btn-secondary" type="button">Search</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="col-md-4 mb-3">
+									<div class="input-group" style="width:50vh;">
+										<input type="text" class="form-control" id="myInput1"  onkeyup="myFunction()" placeholder="Enter profressor's name">
+										<div class="input-group-append">
+											<button class="btn btn-secondary" type="button">Search</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="tableform" style="height:57vh;overflow:auto;">
+				<table id="myTable">
+					<tr class="header" style="background-color:#75A8D9;">
+						<th style="font-size:2.3vh;color:black;width:60%;"> <b> Course </b> </th>
+						<th style="font-size:2.3vh;color:black;width:40%;"> <b> Professor </b> </th>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=CS 180&professor=Linqi Yan&quarter=Winter" class="links"> CS 180 </a> </td>
+						<td>Linqi Yan</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=CS 185&professor=Tobias Hollerer&quarter=Winter" class="links"> CS 185 </a> </td>
+						<td>Tobias Hollerer</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=Math 6A&professor=Yitang&quarter=Winter" class="links"> Math 6A </a> </td>
+						<td>Yitang</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=Math 4A&professor=Sebastian&quarter=Winter" class="links"> Math 4A </a> </td>
+						<td>Sebastian</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=CS 184&professor=Linqi Yan&quarter=Winter" class="links"> CS 184 </a> </td>
+						<td>Linqi Yan</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=CS 184&professor=Tobias Hollerer&quarter=Winter" class="links"> CS 184 </a> </td>
+						<td>Tobias Hollerer</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=Math 6A&professor=Yitang&quarter=Winter" class="links"> Math 6A </a> </td>
+						<td>Yitang</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=Physics 1&professor=Ernest Freund&quarter=Winter" class="links"> Physics 1 </a> </td>
+						<td>Ernest Freund</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=Math 4A&professor=Sebastian&quarter=Winter" class="links"> Math 4A </a> </td>
+						<td>Sebastian</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=CS 180&professor=Linqi Yan&quarter=Winter" class="links"> CS 180 </a> </td>
+						<td>Linqi Yan</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=CS 185&professor=Tobias Hollerer&quarter=Winter" class="links"> CS 185 </a> </td>
+						<td>Tobias Hollerer</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=Math 6A&professor=Yitang&quarter=Winter" class="links"> Math 6A </a> </td>
+						<td>Yitang</td>
+					</tr>
+					<tr>
+						<td> <a href="documentList.html#course=Math 4A&professor=Sebastian&quarter=Winter" class="links"> Math 4A </a> </td>
+						<td>Sebastian</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/navbar.js"></script>
+		<!--script to find the inputted course and professor-->
+		<script>
+			function myFunction() {
+				var input, input1, filter, filter1, table, tr, td, tl, i, txtValue, txtValue1;
+				input = document.getElementById("myInput");
+				input1 = document.getElementById("myInput1");
+				filter = input.value.toUpperCase();
+				filter1 = input1.value.toUpperCase()
+				table = document.getElementById("myTable");
+				tr = table.getElementsByTagName("tr");
+				for (i = 0; i < tr.length; i++) {
+					td = tr[i].getElementsByTagName("td")[0];
+					tl = tr[i].getElementsByTagName("td")[1];
+					if (td && tl) {
+						txtValue = td.textContent || td.innerText;
+						txtValue1 = tl.textContent || tl.innerText
+						if ((txtValue.toUpperCase().indexOf(filter) > -1) && (txtValue1.toUpperCase().indexOf(filter1) > -1)) {
+							tr[i].style.display = "";
+						} 
+						else {
+							tr[i].style.display = "none";
+						}
+					} 
+				}
+			}
+		</script>
+	</body>
+</html>

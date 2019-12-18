@@ -1,0 +1,54 @@
+/*fall style page*/
+* { box-sizing: border-box; }
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: "Poppins";
+}
+
+#notaTitle {
+  font-size: 7vh;
+  font-family: "Playfair Display";
+  margin-top: -40px;
+  color: black;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+#title {
+  font-family: "Playfair Display";
+  padding-top:0px;
+  font-size: 15vh;
+}
+
+/*styles table*/
+.links {
+  color: black;
+}
+
+.links:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+#myTable {
+  background-color: white;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd; 
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #E8F1F5;
+}

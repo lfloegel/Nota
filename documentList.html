@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		<link href="https://fonts.googleapis.com/css?family=Muli|Playfair+Display|Poppins|Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/sidenav.css">
+		<link rel="stylesheet" href="css/documentList.css">
+		<title>Nota</title>
+	</head>
+	<body>
+
+
+		<nav id="mySidenav" class="nav sidenav"></nav>
+
+		<a class="navbar-brand">nota</a>
+
+		<img id="menu" onclick="openNav()" src="images/menu.png">
+
+		<div id="main">
+			<h2 id="intro"></h2>
+
+
+			<div class="container main-container">
+
+				<div id="class-info" class="row mb-4"></div>
+				<div class="row mb-4">
+					<div class="col-md-4 legend-green">Notes Available</div>
+					<div class="col-md-4 legend-yellow">No Class</div>
+					<div class="col-md-4 legend-red">No Notes Available</div>
+				</div>
+				<div class="row mb-4">
+					<table id="myTable" class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Week</th>
+								<th scope="col">Mon</th>
+								<th scope="col">Tue</th>
+								<th scope="col">Wed</th>
+								<th scope="col">Thu</th>
+								<th scope="col">Fri</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-1" aria-expanded="false" aria-controls=".row-1">
+								<th scope="row">1<br><i class="down-arrow"></i></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-2" aria-expanded="false" aria-controls=".row-2">
+								<th scope="row">2<br><i class="down-arrow"></i></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-3" aria-expanded="false" aria-controls=".row-3">
+								<th scope="row">3<br><i class="down-arrow"></i></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-4" aria-expanded="false" aria-controls=".row-4">
+								<th scope="row">4<br><i class="down-arrow"></i></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-5" aria-expanded="false" aria-controls=".row-5">
+								<th scope="row">5<br><i class="down-arrow"></i></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-6" aria-expanded="false" aria-controls=".row-6">
+								<th scope="row">6<br><i class="down-arrow"></i></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-7" aria-expanded="false" aria-controls=".row-7">
+									<th scope="row">7<br><i class="down-arrow"></i></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-8" aria-expanded="false" aria-controls=".row-8">
+									<th scope="row">8<br><i class="down-arrow"></i></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-9" aria-expanded="false" aria-controls=".row-9">
+									<th scope="row">9<br><i class="down-arrow"></i></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr class="clickable collapsed" data-toggle="collapse" data-target=".row-10" aria-expanded="false" aria-controls=".row-10">
+									<th scope="row">10<br><i class="down-arrow"></i></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/navbar.js"></script>
+		<script>
+$(document).ready(function() {
+	if(window.location.hash != '') {
+	var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+	var course = decodeURIComponent(hashParams[0].split('=')[1]);
+	var professor = decodeURIComponent(hashParams[1].split('=')[1]);
+	var quarter = decodeURIComponent(hashParams[2].split('=')[1]);
+	document.getElementById('intro').innerHTML =  '<center>Notes for ' + course + ' </center>';
+	document.getElementById('class-info').innerHTML =	'<div class="col-md-4 class-info">Quarter: '+ quarter +' 2019</div> <div class="col-md-4 class-info">Course: '+ course +'</div> <div class="col-md-4 class-info">Professor: '+ professor +'</div>';
+}
+
+	function buildTable(user) {
+	var availableNotes = [
+	[-1, 1, -1, 1, -1],
+		[-1, 0, -1, 0, -1],
+		[-1, 1, -1, 1, -1],
+		[-1, 0, -1, 1, -1],
+		[-1, 1, -1, 1, -1],
+		[-1, 1, -1, 1, -1],
+		[-1, 1, -1, 0, -1],
+		[-1, 0, -1, 1, -1],
+		[-1, 1, -1, 0, -1],
+		[-1, 1, -1, 1, -1],
+];
+
+	var table = document.getElementById("myTable");
+	for (var i = 1, row; row = table.rows[i]; i++) {
+	for (var j = 1, col; col = row.cells[j]; j++) {
+	var querystr = window.location.hash + '&' + 'week=' + i + '&' + 'day=' + j;
+	if(availableNotes[i-1][j-1] == 0) {
+	if(user) {
+	col.innerHTML = '<center><div class="card collapse row-'+i+'" data-parent="#myTable"> <a class="img-card" href="#"> <img src="images/not-found.png"/> </a> <div class="card-upload"> <a href="upload.html' + querystr + '" class="btn btn-block btn-upload-danger"> &#43 Upload </a> </div> </div><center>';
+} else {
+	col.innerHTML = '<center><div class="card collapse row-'+i+'" data-parent="#myTable"> <a class="img-card" href="#"> <img src="images/not-found.png"/> </a> </div><center>';
+}
+	col.classList.add("table-danger");
+} else if (availableNotes[i-1][j-1] > 0) {
+	if(user) {
+	col.innerHTML = '<center><div class="card collapse row-'+i+'" data-parent="#myTable"> <a class="img-card" href="notes.html' + querystr + '"> <img src="images/notes-preview-1.png"/> </a> <div class="card-upload"> <a href="upload.html' + querystr + '" class="btn btn-block btn-upload"> &#43 Upload </a> </div> </div><center>';
+} else {
+	col.innerHTML = '<center><div class="card collapse row-'+i+'" data-parent="#myTable"> <a class="img-card" href="notes.html' + querystr + '"> <img src="images/notes-preview-1.png"/> </a> </div><center>';
+}
+	col.classList.add("table-success");
+} else {
+	col.classList.add("table-warning");
+}
+}
+}
+}
+	firebase.auth().onAuthStateChanged(user => {
+	buildTable(user);
+});
+});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		<link href="https://fonts.googleapis.com/css?family=Muli|Playfair+Display|Poppins|Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/sidenav.css">
+		<link rel="stylesheet" href="css/upload.css">
+		<title>Nota</title>
+	</head>
+	<body>
+
+		<nav id="mySidenav" class="nav sidenav"></nav>
+
+		<a class="navbar-brand">nota</a>
+		<img id="menu" onclick="openNav()" src="images/menu.png">
+
+		<div id="main">
+			<h2 id="intro"> <center>Upload Notes</center> </h2>
+
+			<img id="menu" onclick="openNav()" src="images/menu.png">
+
+			<div class="container main-container">
+				<div class="row justify-content-center align-items-center main-row mb-5">
+					<div class="col main-col">
+						<div class="row mb-4">
+							<div class="col-md-12">
+								<div id="quarter-group" class="form-group">
+									<label class="large-label" for="quarter">Quarter</label>
+									<div class="row mb-4">
+										<div class="col-md-3">
+											<div id="quarter" class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="quarter-radios" id="exampleRadiosFall" value="Fall" checked>
+												<label class="form-check-label" for="exampleRadios1">
+													Fall
+												</label>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div id="quarter" class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="quarter-radios" id="exampleRadiosWinter" value="Winter">
+												<label class="form-check-label" for="exampleRadios2">
+													Winter
+												</label>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div id="quarter" class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="quarter-radios" id="exampleRadiosSpring" value="Spring">
+												<label class="form-check-label" for="exampleRadios3">
+													Spring
+												</label>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div id="quarter" class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="quarter-radios" id="exampleRadiosSummer" value="Summer">
+												<label class="form-check-label" for="exampleRadios4">
+													Summer
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mb-4">
+							<div class="col-md-6">
+								<label class="large-label" for="location-input">Course</label>
+								<select id="course" class="form-control form-control-md">
+									<option>CS 180</option>
+									<option>CS 185</option>
+									<option>Physics 1</option>
+									<option>CS 184</option>
+									<option>Math 4A</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<label class="large-label" for="location-input">Professor</label>
+								<select id="professor" class="form-control form-control-md">
+									<option>Linqi Yan</option>
+									<option>Tobias Hollerer</option>
+									<option>Ernest Freund</option>
+									<option>Sebastian</option>
+									<option>Shaya Shakerian</option>
+								</select>
+							</div>
+						</div>
+						<div class="row mb-4">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="large-label" for="time-input">Time</label>
+									<input type="time" class="form-control" id="time-input">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label class="large-label" for="location-input">Day</label>
+								<select id="day" class="form-control form-control-md">
+									<option>Monday</option>
+									<option>Tuesday</option>
+									<option>Wednesday</option>
+									<option>Thursday</option>
+									<option>Friday</option>
+								</select>
+							</div>
+						</div>
+						<div class="row mb-4">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-12">
+										<label class="large-label" for="week-button-group">Week</label>
+									</div>
+								</div>
+								<div id="week" class="btn-group btn-group-toggle" data-toggle="buttons" aria-label="Basic example">
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option1" value=1> 1
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option2" value=2> 2
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option3" value=3> 3
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option4" value=4> 4
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option5" value=5> 5
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option6" value=6> 6
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option7" value=7> 7
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option8" value=8> 8
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option9" value=9> 9
+									</label>
+									<label class="btn btn-secondary">
+										<input class="form-check-input" type="radio" name="week-radios" id="option10" value=10> 10
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="row mb-4">
+							<div class="col-md-12">
+								<button type="submit" onclick="upload();" class="btn btn-secondary btn-lg btn-block mb-4">Upload</button>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/navbar.js"></script>
+		<script>
+
+var days = {
+	1: "Monday",
+	2: "Tuesday",
+	3: "Wednesday",
+	4: "Thursday",
+	5: "Friday"
+};
+
+$(document).ready(function() {
+	if(window.location.hash != '') {
+	var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+	for(var i = 0; i < hashParams.length; i++){
+	var p = hashParams[i].split('=');
+	if (p[0] == 'week') {
+	$('#option'+p[1]).click();
+} else if (p[0] == 'quarter') {
+	$('#exampleRadios'+p[1]).click();
+} else if (p[0] == 'day') {
+	document.getElementById(p[0]).value = decodeURIComponent(days[p[1]]);;
+} else {
+	document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
+}
+}
+}
+});
+
+		</script>
+	</body>
+</html>

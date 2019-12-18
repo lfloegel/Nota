@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Playfair+Display|Poppins|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/selection.css">
+    <title>Nota</title>
+  </head>
+  <body>
+
+		<nav id="mySidenav" class="nav sidenav"></nav>
+
+		<a class="navbar-brand">nota</a>
+
+		<img id="menu" onclick="openNav()" src="images/menu.png">
+
+
+    <div id="main">
+			<h2 id="intro"> <center>Choose a Quarter</center> </h2>
+			<h4> <center>Choose a quarter to find your class</center> </h4>
+
+      <div class="container">
+        <div class="row mb-md-4">
+        	<div class="col-md-6">
+        		<div class="fall">
+        			<a href="fall.html">
+        			  <img src="images/fall.png" class="image">
+        			  <div class="overlay" style="background-color: red;"></div>
+        			</a>
+        		</div>
+        	</div>
+        	<div class="col-md-6">
+						<div class="winter">
+							<a href="winter.html">
+								<img src="images/winter.png" class="image">
+								<div class="overlay" style="background-color: blue;"></div>
+							</a>
+						</div>
+        	</div>
+        </div>
+        <div class="row mb-4">
+        	<div class="col-md-6">
+        		<div class="spring">
+        		  <a href="spring.html">
+								<img src="images/spring.png" class="image">
+								<div class="overlay" style="background-color: green;"></div>
+							</a>
+        		</div>
+        	</div>
+        	<div class="col-md-6">
+        		<div class="summer">
+        		  <a href="summer.html"> <img src="images/summer.png" class="image">
+        		  <div class="overlay" style="background-color: yellow;"></div>
+							</a>
+        		</div>
+        	</div>
+        </div>
+      </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/navbar.js"></script>
+  </body>
+</html>

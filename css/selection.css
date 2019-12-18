@@ -1,0 +1,52 @@
+/*squares*/
+.fall {
+  position: relative;
+}
+
+.winter {
+  position: relative;
+}
+
+.spring {
+  position: relative;
+}
+
+.summer {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.fall:hover .overlay {
+  width: 100%;
+}
+
+.winter:hover .overlay {
+  width: 100%;
+}
+
+.spring:hover .overlay {
+  width: 100%;
+}
+
+.summer:hover .overlay {
+  width: 100%;
+}
+
+h4 {
+	margin-top: -40px;
+	margin-bottom: 40px;
+}

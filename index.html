@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		<link href="https://fonts.googleapis.com/css?family=Muli|Playfair+Display|Poppins|Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/sidenav.css">
+		<title>Nota</title>
+	</head>
+	<body>
+
+		<nav id="mySidenav" class="nav sidenav"></nav>
+
+		<a class="navbar-brand">nota</a>
+
+		<img id="menu" onclick="openNav()" src="images/menu.png">
+
+		<div id="main">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+						<img class="center img-fluid z-depth-1"src="css/images/notalogo.png" width="400px" height="auto">
+					</div>
+				</div>
+				<div class="row mb-5 justify-content-center">
+					<h2 style="text-align:center; color:grey;">your all access pass to any class</h2>
+				</div>
+				<div class="row justify-content-center pr-3 pl-3">
+					<div class="jumbotron" style="width:100%;">
+						<h1 class="display-4">What is Nota?</h1>
+						<p class="lead">Nota is a web app for organizing and sharing lecture notes.</p>
+						<hr class="my-4">
+						<p>Nota is a simple platform for sharing lecture notes, videos, and other study material. Notes on Nota are taggable and searchable through a simple UI. Upon signing in, you can upload and share your own study material. Nota allows you to tag, organize and search through your lecture notes. Use Nota to study for classes you are enrolled in or to inspect and compare classes you are considering signing up for.</p>
+						<p class="lead">
+						<a class="btn btn-secondary btn-lg" href="about.html" role="button">Learn more</a>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="jumbotron">
+							<h1 class="display-4">Browse Notes</h1>
+							<p class="lead">You can begin browsing notes now without signing in.</p>
+							<a class="btn btn-secondary btn-lg" href="selection.html" role="button">Start Browsing Notes</a>
+							</p>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+						<div class="jumbotron">
+							<h1 class="display-4" id="welcomeHeader">Log in</h1>
+							<p class="lead" id="welcomeComment">Logging in allows you to upload, organize and share your own notes on Nota.</p>
+							<p class="lead">
+							<a id="welcomeButton" class="btn btn-secondary btn-lg" href="login(typeII).html" role="button">Log in or Register</a>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/navbar.js"></script>
+
+		<script>
+			var user = firebase.auth().onAuthStateChanged(user => {
+			if (user) {
+				console.log("user logged in index");
+			  // User is signed in.
+			  document.getElementById("welcomeHeader").innerHTML = "Welcome!";
+			  document.getElementById("welcomeComment").innerHTML = "You are successfully signed in. You can now upload and download notes.";
+			  document.getElementById("welcomeButton").innerHTML = "Sign Out";
+			  document.getElementById("welcomeButton").href = "";
+			  document.getElementById("welcomeButton").onclick=signOut;
+			} else {
+			  // No user is signed in.
+			  console.log("no user is signed in");
+			
+			}
+		});
+		
+		
+		</script>
+	</body>
+</html>

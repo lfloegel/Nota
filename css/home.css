@@ -1,0 +1,92 @@
+/*home style page*/
+body {
+  font-family: "Poppins";
+}
+
+#notaTitle {
+  font-size:10vh;
+  font-family: "Playfair Display";
+  padding-top:0vh;
+  margin-top:-40px;
+  color:black;
+}
+
+#title {
+  font-size: 5vh;
+  color: gray;
+  margin-left: 35vh;
+  font-family: "Raleway";
+}
+
+#menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 9vh;
+  height: 9vh;
+  cursor:pointer;
+}
+
+/*squares*/
+.fall {
+  position: relative;
+  width: 50vh;
+  margin-top:0vh;
+  margin-left: 30vh;
+}
+
+.winter {
+  position: relative;
+  width: 50vh;
+  margin-top:-28vh;
+  margin-left: 100vh;
+}
+
+.spring {
+  position: relative;
+  width: 50vh;
+  margin-top:10vh;
+  margin-left: 30vh;
+}
+
+.summer {
+  position: relative;
+  width: 50vh;
+  margin-top:-28vh;
+  margin-left: 100vh;
+}
+
+.image {
+  display: block;
+  width: 50vh;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  margin-left: 0.0vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.fall:hover .overlay {
+  width: 50vh;
+}
+
+.winter:hover .overlay {
+  width: 50vh;
+}
+
+.spring:hover .overlay {
+  width: 50vh;
+}
+
+.summer:hover .overlay {
+  width: 50vh;
+}
